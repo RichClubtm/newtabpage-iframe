@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Iframe New Tab Loader",
+  "version": "1.0",
+  "description": "Loads a saved URL inside a fullscreen iframe on each new tab.",
+  "permissions": ["storage"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Tab</title>
+  <style>
+    html, body, iframe {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border: none;
+      padding: 0;
+    }
+    iframe { display: block; }
+  </style>
+</head>
+<body>
+  <iframe id="frame"></iframe>
+
+  <!-- external scripts to support iframe bypass and custom elements -->
+  <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+  <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
